@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body{
+            background-image: url(https://images.pexels.com/photos/4466492/pexels-photo-4466492.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4466492.jpg&fm=jpg);
+            background-size: cover;
+        }
+        .radio{
+            margin-left: 12%;
+        }
+        .button{
+            margin-left: 23%;
+        }
+        .btn{
+            border: 1px solid darkgoldenrod;
+            background-color: rgb(234, 209, 69);
+            opacity: 0.8;
+            padding-right: 25px;
+            padding-left: 25px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 25px;
+        }
+        .btn:hover{
+            color: black;
+            background-color: darkgoldenrod;
+            opacity: 1;
+        }
+        .box{
+            height: 500px;
+            width: 430px;
+            border: 1px solid green;
+            padding: 15px;
+            background-color: transparent;
+            margin-left: 15%;
+            border-top-right-radius: 10%;
+            border-bottom-left-radius: 10%;
+            margin-top: 3%;
+        }
+        .box:hover {
+            box-shadow: 1px 1px 1px 1px black;
+            background-color: /*rgba(255, 250, 250, 0.462)*/transparent;
+            opacity: 0.7;
+            border: 2px solid gold;
+        }
+        .tag,.tagname{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p style="color:goldenrod; font-size: 50px; margin-left: 18%;"><b><i>Join Vogue Club</i></b></p>
+    <form action="./successpage.html">
+    <div class="box">
+        <table class="table" style="font-size: 22.5px;">
+            <tr>
+                <td class="tagname"><label for="firstname"><b>First Name</b></label></td><td class="tag"><b>:</b></td><td class="tag"><input type="text" id="firstname" name="firstname" placeholder="Enter your First Name" required></td>
+            </tr>
+            <tr>
+                <td class="tagname"><label for="middlename"><b>Middle Name</b></label></td><td class="tag"><b>:</b></td><td class="tag"><input type="text" id="middlename" name="middlename" placeholder="Enter your Middle Name" required></td>
+            </tr>
+            <tr>
+                <td class="tagname"><label for="lastname"><b>Last Name</b></label></td><td class="tag"><b>:</b></td><td class="tag"><input type="text" id="lastname" name="lastname" placeholder="Enter your Last Name" required></td>
+            </tr>
+            <tr>
+                <td class="tagname"><label for="dob"><b>Date of Birth</b></label></td><td class="tag"><b>:</b></td><td class="tag"><input type="date" id="dob" name="dob"  required></td>
+            </tr>
+            <tr>
+                <td><b>Gender</b></td><td><b>:</b></td>
+                <td><input type="radio" id="male" name="gender" value="male"><b>Male</b><input type="radio" id="female" name="gender" value="female" required><b>Female</b></td>
+            </tr>
+            
+                <tr>
+                    <td class="tagname"><label for="mail"><b>Your Mail ID</b></label></td><td class="tag"><b>:</b></td><td class="tag"><input type="mail" id="mail" name="mail" placeholder="Enter your Email Address" required></td>
+                </tr>
+
+                <tr>
+                    <td class="tagname"><label for="password"><b>Password</b></label></td><td class="tag"><b>:</b></td><td class="tag"><input type="password" id="password" name="password" placeholder="Enter a Strong Password" required></td>
+                </tr>
+
+                <tr>
+                    <td class="tagname"><label for="confirm password"><b>Confirm Password</b></label></td><td class="tag"><b>:</b></td><td class="tag"><input type="password" id="confirm password" name="confirm password" placeholder="Re-Enter Your Password" required></td>
+                </tr>
+            </table>
+            <div class="button">
+                <br><br>
+            <a rel="stylesheet" href="./successpage.html"> <button class="btn" style="font-size: 25px;" type="submit">Create Account</button></a>
+            </div>
+    </div>
+    </form>
+</body>
+</html>
